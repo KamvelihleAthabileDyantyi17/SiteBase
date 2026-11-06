@@ -1,0 +1,24 @@
+# Real data and working files: never commit
+local/
+*.accdb
+*.accde
+*.laccdb
+*.mdb
+*.ldb
+*.btdb
+*.xlsx
+*.xls
+*.csv
+*.bak
+
+# Secrets and real configuration
+.env
+config.json
+
+# Python / tools
+__pycache__/
+*.pyc
+.venv/
+env/
+*.log
+.vscode/

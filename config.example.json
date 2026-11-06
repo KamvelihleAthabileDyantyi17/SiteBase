@@ -1,0 +1,17 @@
+{
+  "_comment": "Copy to config.json and fill in. config.json is git-ignored.",
+  "sql": {
+    "server": "SERVER_NAME_OR_IP,1433",
+    "database": "SiteBase",
+    "driver": "ODBC Driver 17 for SQL Server",
+    "trusted_connection": true
+  },
+  "paths": {
+    "publish_root": "C:/Users/<you>/Desktop/SiteBase/local/test_publish",
+    "backup_root": "C:/Users/<you>/Desktop/SiteBase/local/backups",
+    "masterfile_root": "C:/Users/<you>/Desktop/MaterFiles"
+  },
+  "safety": {
+    "allow_synology_writes": false
+  }
+}
