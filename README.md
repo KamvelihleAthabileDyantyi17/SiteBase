@@ -4,7 +4,7 @@
 
 SiteBase holds the master data that BarTender print stations use to print packhouse labels: farms (PUC, GGN, GLN), orchards, varieties, packs, GTINs, retailers and their translations. Technicians edit the data together on SQL Server, and every change is stamped with who made it and when. Each packhouse gets a checked copy containing only its own data. When a packhouse changes its copy, the changes arrive as requests for a technician to approve. Nothing is pushed straight through.
 
-> Status: **Stage 0: design.** Nothing is deployed yet. See [docs/roadmap.md](docs/roadmap.md).
+> Status: **Stage 1 complete:** `SiteBase_Dev` built on SQL Server 2019 with stamps, history, roles, checks and a test data set. **Next: Stage 2, technician screens.** See [docs/roadmap.md](docs/roadmap.md) and [database/migrations](database/migrations/README.md).
 
 ---
 
@@ -51,6 +51,7 @@ Full detail: [docs/architecture.md](docs/architecture.md).
 |---|---|
 | `docs/` | Architecture, data model, BarTender table mapping, roadmap |
 | `docs/decisions/` | Decision records: what we chose and why |
+| `docs/build-log/` | Step-by-step record of the build, with screenshots |
 | `database/migrations/` | SQL scripts that build the SiteBase database, in order *(Stage 1)* |
 | `frontend/` | Technician Access screens, exported as text *(Stage 2)* |
 | `sync/` | Publishing, change-request collection and backups; grows out of `backup_manager` *(Stage 3–5)* |
